@@ -15,7 +15,7 @@
   </head>
   <body class="overflow-hidden font-Barlow">
     <header
-      class="container mx-auto p-6 flex justify-between mb-[100px] lg:mb-[124px] relative"
+      class="container mx-auto p-6 flex justify-between mb-[50px] lg:mb-[124px]"
     >
       <!--Logo-->
       <div class="w-[24px] lg:w-[32px]">
@@ -36,18 +36,17 @@
       <!--Mobile Menu (Hamburger and Dropdown)-->
       <div class="md:hidden">
         <!--Hamburger Icon (Aligned to the Right)-->
-        <button>
-          <img src="./images/icon-hamburger.svg" alt="menu" />
+        <button id="menu-toggle">
+          <img src="./images/icon-hamburger.svg" alt="menu" id="menu-icon" />
         </button>
 
         <!--Dropdown Menu-->
-        <div class="absolute z-10">
-          <ul class="space-y-2">
-            <li><a href="#">laba</a></li>
-            <li><a href="#">laba</a></li>
-            <li><a href="#">laba</a></li>
-            <li><a href="#">laba</a></li>
-            <li><a href="#">laba</a></li>
+        <div id="dropdown-menu" class="absolute z-10 w-[80%] right-12.5 top-12">
+          <ul class="space-y-2 bg-white w-full font-bold">
+            <li class="text-center"><a href="#">PRODUCT</a></li>
+            <li class="text-center"><a href="#">FEATURES</a></li>
+            <li class="text-center mb-[20px]"><a href="#">PRICING</a></li>
+            <li class="text-center text-gray-400"><a href="#">LOGIN</a></li>
           </ul>
         </div>
       </div>
@@ -83,7 +82,7 @@
           <h2 class="text-gray-400 text-[14px] uppercase">to see a preview</h2>
         </div>
       </div>
-      <div class="mb-[160px]">
+      <div class="mb-[160px] overflow-x-hidden">
         <img
           src="./images/illustration-devices.svg"
           alt="illustration"
