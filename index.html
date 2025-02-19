@@ -13,14 +13,17 @@
     />
     <title>Project Tracking</title>
   </head>
-  <body class="overflow-hidden font-Barlo>
+  <body class="overflow-hidden font-Barlow">
     <header
-      class="container mx-auto p-6 flex justify-between mb-[100px] lg:mb-[124px]"
+      class="container mx-auto p-6 flex justify-between mb-[100px] lg:mb-[124px] relative"
     >
+      <!--Logo-->
       <div class="w-[24px] lg:w-[32px]">
         <img src="./images/logo.svg" alt="logo" />
       </div>
-      <nav class="hidden md:block relative">
+
+      <!--Desktop Navigation-->
+      <nav class="hidden md:block">
         <ul class="flex space-x-[42px]">
           <li><a href="#" class="hover:underline">Product</a></li>
           <li><a href="#" class="hover:underline">Features</a></li>
@@ -29,6 +32,25 @@
           <li><a href="#" class="text-gray-400 hover:underline">Login</a></li>
         </ul>
       </nav>
+
+      <!--Mobile Menu (Hamburger and Dropdown)-->
+      <div class="md:hidden">
+        <!--Hamburger Icon (Aligned to the Right)-->
+        <button>
+          <img src="./images/icon-hamburger.svg" alt="menu" />
+        </button>
+
+        <!--Dropdown Menu-->
+        <div class="absolute z-10">
+          <ul class="space-y-2">
+            <li><a href="#">laba</a></li>
+            <li><a href="#">laba</a></li>
+            <li><a href="#">laba</a></li>
+            <li><a href="#">laba</a></li>
+            <li><a href="#">laba</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <section
       class="container pl-6 mx-auto flex flex-col-reverse lg:flex-row lg:items-center"
