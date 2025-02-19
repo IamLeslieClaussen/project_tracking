@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project Tracking</title>
+  </head>
+  <body class="overflow-hidden font-Barlo>
+    <header
+      class="container mx-auto p-6 flex justify-between mb-[100px] lg:mb-[124px]"
+    >
+      <div class="w-[24px] lg:w-[32px]">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <nav class="hidden md:block relative">
+        <ul class="flex space-x-[42px]">
+          <li><a href="#" class="hover:underline">Product</a></li>
+          <li><a href="#" class="hover:underline">Features</a></li>
+          <li><a href="#" class="hover:underline">Pricing</a></li>
+          <li>&middot;</li>
+          <li><a href="#" class="text-gray-400 hover:underline">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="container pl-6 mx-auto flex flex-col-reverse lg:flex-row lg:items-center"
+    >
+      <div class="lg:mt-[-250px]">
+        <div class="lg:mb-[64px]">
+          <h2
+            class="uppercase text-gray-400 tracking-wider mb-[20px] text-[15px]"
+          >
+            <span class="bg-black py-3 px-5 rounded-3xl text-white mr-3"
+              >new</span
+            >
+            <span class="mr-3">monograph</span> dashboard
+          </h2>
+          <h1
+            class="text-[40px] font-bold uppercase leading-10 mb-[16px] lg:w-[470px]"
+          >
+            Powerful insights into your team
+          </h1>
+          <p class="text-gray-400 text-[18px] w-[300px] mb-[27px]">
+            Projects planning and time tracking for agile teams
+          </p>
+        </div>
+        <div class="flex gap-[20px] items-center">
+          <h2
+            class="bg-amber-600 text-white px-[24px] py-[12px] rounded-[5px] uppercase text-[14px]"
+          >
+            schedule a demo
+          </h2>
+          <h2 class="text-gray-400 text-[14px] uppercase">to see a preview</h2>
+        </div>
+      </div>
+      <div class="mb-[160px]">
+        <img
+          src="./images/illustration-devices.svg"
+          alt="illustration"
+          class="scale-150 ml-[80px] lg:scale-130 lg:ml-[100px]"
+        />
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
