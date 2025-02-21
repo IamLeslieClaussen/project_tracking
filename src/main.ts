@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdownMenu.classList.toggle("hidden");
 
     menuIcon.src = isMenuOpen
-      ? "./images/icon-close.svg"
-      : "./images/icon-hamburger.svg";
+      ? "./images/icon-hamburger.svg"
+      : "./images/icon-close.svg";
   });
 });
